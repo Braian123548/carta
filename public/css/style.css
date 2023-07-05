@@ -1,0 +1,166 @@
+body {
+    margin: 0rem;
+}
+
+/*Contenedor*/
+.index-contenedor {
+    display: flex;
+    margin-left: 5rem;
+}
+
+/*Header*/
+.index-header-nav-ul {
+    padding-left: 0rem;
+    list-style: none;
+
+}
+
+.index-header h1 {
+    width: 500%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.index-header-nav-ul li a {
+    text-decoration: none;
+    color: grey;
+    transition: font-size 0.3s ease;
+}
+
+.index-header-nav-ul li a:hover {
+    color: black;
+    font-size: 1.5em;
+   
+}
+
+.index-header-nav {
+    margin-top: 3rem;
+}
+
+.index-header-nav-ul li {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+
+/*Main*/
+
+
+.index-main {
+    margin-top: 8.5rem;
+    padding-left: 2rem;
+    border-left: 1px solid grey;
+
+}
+
+.index-main-contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+
+}
+
+.index-entradas a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: -20px;
+    transition: font-size 0.3s ease;
+}
+
+.index-entradas a:hover{
+    color: rgb(73, 73, 73);
+    font-size: 1.5em;
+    
+}
+
+.index-entradas {
+    margin-right: 1.5rem;
+}
+
+/*Footer*/
+
+footer img {
+    height: 20vh;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(197, 197, 197);
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.index-contacto a,
+h4 {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.index-contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+
+
+@media (width<500px) {
+    .index-contenedor {
+     flex-direction: column;
+     margin: 0rem;
+     text-align: center;
+    }
+
+
+    .index-header-nav {
+        margin-top: 2rem;
+    }
+    
+
+    .index-main{
+        margin-top: 0rem;
+        padding: 0rem;
+    }
+
+    .index-header h1 {
+        width: 100%;
+        border-bottom: none;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+    .index-main-contenedor {
+        display: flex;
+        flex-direction: column;
+      
+    
+    }
+
+    .index-entradas{
+        margin: 0rem auto;
+        text-align: center;
+    }
+
+    .index-entradas a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-left: 0rem;
+        transition: font-size 0.3s ease;
+    }
+    
+
+    footer img {
+        height: 10vh;
+    }
+    
+   
+ }
+ 
