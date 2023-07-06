@@ -59,7 +59,7 @@ body {
 .index-main-contenedor {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .index-entradas a {
@@ -155,8 +155,7 @@ footer {
     .index-main-contenedor {
         display: flex;
         flex-direction: column;
-
-
+        align-items: center;
     }
 
     .index-entradas {
