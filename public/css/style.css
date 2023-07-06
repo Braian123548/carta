@@ -33,7 +33,7 @@ body {
 .index-header-nav-ul li a:hover {
     color: black;
     font-size: 1.5em;
-   
+
 }
 
 .index-header-nav {
@@ -53,14 +53,13 @@ body {
     margin-top: 8.5rem;
     padding-left: 2rem;
     border-left: 1px solid grey;
-
 }
+
 
 .index-main-contenedor {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-start;
-
+    align-items: center;
 }
 
 .index-entradas a {
@@ -71,29 +70,14 @@ body {
     transition: font-size 0.3s ease;
 }
 
-.index-entradas a:hover{
+.index-entradas a:hover {
     color: rgb(73, 73, 73);
     font-size: 1.5em;
-    
+
 }
 
 .index-entradas {
     margin-right: 1.5rem;
-}
-
-/*Footer*/
-
-footer img {
-    height: 20vh;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(197, 197, 197);
-    margin-top: 2rem;
-    padding: 2rem;
 }
 
 .index-contacto a,
@@ -110,21 +94,53 @@ h4 {
 }
 
 
+/*Footer*/
+
+footer img {
+    height: 20vh;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(197, 197, 197);
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+
+
+
+
 
 @media (width<500px) {
     .index-contenedor {
-     flex-direction: column;
-     margin: 0rem;
-     text-align: center;
+        flex-direction: column;
+        margin: 0rem;
+        text-align: center;
     }
 
+    .index-header h1{
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
+    }
 
     .index-header-nav {
-        margin-top: 2rem;
+        margin-top: 0rem;
     }
-    
 
-    .index-main{
+    .index-header-nav ul li {
+        display: inline-block;
+        flex-wrap: wrap;
+        margin: 0.2rem;
+        padding: 0.3rem;
+        background-color: rgb(233, 231, 231);
+        border-radius: 0.5rem;
+    }
+
+
+    .index-main {
         margin-top: 0rem;
         padding: 0rem;
     }
@@ -135,15 +151,15 @@ h4 {
         margin-bottom: 2rem;
         padding-bottom: 1rem;
     }
-    
+
     .index-main-contenedor {
         display: flex;
         flex-direction: column;
-      
-    
+
+
     }
 
-    .index-entradas{
+    .index-entradas {
         margin: 0rem auto;
         text-align: center;
     }
@@ -155,12 +171,11 @@ h4 {
         margin-left: 0rem;
         transition: font-size 0.3s ease;
     }
-    
+
 
     footer img {
         height: 10vh;
     }
-    
-   
- }
- 
+
+
+}
